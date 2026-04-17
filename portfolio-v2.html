@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preeti Gondal — IT Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-name" id="loaderName"></div>
+      <div class="loader-sub">Engineering systems</div>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- GRAIN OVERLAY — signature design element -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- MAGNETIC CURSOR -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-text" id="cursorText"></div>
+  </div>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-wordmark">
+      <span>Preeti</span><em>Gondal</em>
+    </a>
+    <div class="nav-status" aria-label="Availability status">
+      <span class="nav-status-dot" aria-hidden="true"></span>
+      <span>Open to work · 2026</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experiences</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+
+    <!-- Decorative year — large background element -->
+    <div class="hero-year" aria-hidden="true">2026</div>
+
+    <!-- Portrait: right-anchored arch -->
+    <div class="hero-portrait-wrap" data-parallax="0.1">
+      <div class="hero-portrait-frame">
+        <img
+          src="IMG\home.jpeg"
+          alt="Preeti Gondal"
+          class="hero-portrait-img"
+        />
+        <div class="hero-portrait-tint" aria-hidden="true"></div>
+      </div>
+      <!-- Floating club badge -->
+      <div class="hero-badge" aria-label="3 active clubs">
+        <span class="hero-badge-num">03</span>
+        <span class="hero-badge-label">Active<br>Clubs</span>
+      </div>
+    </div>
+
+    <!-- Left text block -->
+    <div class="hero-content">
+
+      <div class="hero-eyebrow" data-reveal data-delay="0">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        Full-Stack Systems · AI/ML · Security
+      </div>
+
+      <!-- SIGNATURE HEADLINE — typography as visual identity -->
+      <h1 class="hero-h1">
+        <span class="h1-row h1-row--sm" data-reveal data-delay="80">Designing</span>
+        <span class="h1-row h1-row--accent" data-reveal data-delay="160">
+          <em>intelligent</em>
+        </span>
+        <span class="h1-row h1-row--lg" data-reveal data-delay="240">systems</span>
+        <span class="h1-row h1-row--ghost" data-reveal data-delay="320">that makes sense.</span>
+      </h1>
+
+      <p class="hero-sub" data-reveal data-delay="400">
+        I build end-to-end applications, explore AI/ML,<br>
+        and focus on writing code that's clean, secure, and intentional.
+      </p>
+
+      <div class="hero-ctas" data-reveal data-delay="480">
+        <a href="#work" class="btn-primary">
+          Explore work
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+
+      <nav class="hero-socials" aria-label="Hero social links" data-reveal data-delay="560">
+        <a href="https://github.com/gondalpreeti" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+          <span class="hero-social-main">
+            <svg class="hero-social-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.59 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.89-.01-1.75-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.88 1.55 2.3 1.1 2.86.84.09-.66.34-1.1.62-1.36-2.22-.26-4.55-1.13-4.55-5.04 0-1.11.39-2.01 1.03-2.72-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.04A9.37 9.37 0 0 1 12 6.84c.85 0 1.7.12 2.49.37 1.9-1.32 2.74-1.04 2.74-1.04.55 1.42.2 2.47.1 2.73.64.71 1.03 1.61 1.03 2.72 0 3.92-2.33 4.77-4.56 5.03.36.32.67.95.67 1.93 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.2 10.2 0 0 0 22 12.24C22 6.59 17.52 2 12 2z"/>
+            </svg>
+            <span class="hero-social-label">GitHub</span>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/preeti-gondal-649990310/" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+          <span class="hero-social-main">
+            <svg class="hero-social-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.34 18H5.67V9.41h2.67V18zM7 8.26a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1zM18.34 18h-2.67v-4.18c0-1.13-.44-1.76-1.36-1.76-.99 0-1.5.67-1.5 1.76V18H10.2V9.41h2.56v1.16s.77-1.42 2.6-1.42c1.86 0 2.98 1.14 2.98 3.5V18z"/>
+            </svg>
+            <span class="hero-social-label">LinkedIn</span>
+          </span>
+        </a>
+      </nav>
+
+    </div>
+
+    <!-- Editorial manifesto card —— replaces rotating badge -->
+    <div class="hero-manifesto-card" data-reveal data-delay="520" aria-label="Design philosophy">
+      <div class="manifesto-monogram" aria-hidden="true">PG</div>
+      <div class="manifesto-divider" aria-hidden="true"></div>
+      <ul class="manifesto-pillars" aria-label="Philosophy pillars">
+        <li>
+          <span class="manifesto-tag">01</span>
+          <span class="manifesto-text">Build Clean</span>
+        </li>
+        <li>
+          <span class="manifesto-tag">02</span>
+          <span class="manifesto-text">Logic First</span>
+        </li>
+        <li>
+          <span class="manifesto-tag">03</span>
+          <span class="manifesto-text">Keep Secure</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bottom data strip -->
+    <div class="hero-strip">
+      <div class="hero-strip-item" data-reveal data-delay="640">
+        <span class="strip-val">Full Stack</span>
+        <span class="strip-key">+ DSA + AI/ML + Security</span>
+      </div>
+      <div class="hero-strip-div" aria-hidden="true"></div>
+      <div class="hero-strip-item" data-reveal data-delay="680">
+        <span class="strip-val">Open to</span>
+        <span class="strip-key">Internships · Hackathons · Collabs</span>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-pill"><div class="scroll-ball"></div></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about">
+
+    <!-- Full-width marquee — bleeds past section -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-inner">
+        <span>Full Stack Systems</span><span class="mx">×</span>
+        <span>DSA &amp; Logic</span><span class="mx">×</span>
+        <span>AI / ML</span><span class="mx">×</span>
+        <span>Problem Solving</span><span class="mx">×</span>
+        <span>Cybersecurity</span><span class="mx">×</span>
+        <span>Clean Code</span><span class="mx">×</span>
+        <span>Full Stack Systems</span><span class="mx">×</span>
+        <span>DSA &amp; Logic</span><span class="mx">×</span>
+        <span>AI / ML</span><span class="mx">×</span>
+        <span>Cybersecurity</span><span class="mx">×</span>
+        <span>Clean Code</span><span class="mx">×</span>
+        <span>Problem Solving</span><span class="mx">×</span>
+      </div>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-left">
+        <div class="section-label" data-reveal>
+          <span class="section-label-num">01</span>
+          <span class="section-label-sep" aria-hidden="true">/</span>
+          <span>About</span>
+        </div>
+        <!-- Large decorative letter -->
+        <div class="about-dropcap" aria-hidden="true">I</div>
+      </div>
+
+      <div class="about-right">
+
+        <h2 class="about-h2" data-reveal>
+          I’m interested in <em>systems,<br>how they work,</em> and how they scale.
+        </h2>
+
+        <p class="about-lead" data-reveal data-delay="100">
+          I’m focused on becoming an engineer who can design, build, and understand complete systems — not just isolated features. I like thinking in layers, from interface to backend to data and deployment, and how each part connects.<br>
+          I enjoy breaking things down, understanding how they work, and building them back better.
+        </p>
+
+        <div class="about-pillars">
+          <div class="about-pillar" data-reveal data-delay="80">
+            <span class="pillar-num">01</span>
+            <div class="pillar-body">
+              <h3>Full Stack Systems</h3>
+              <p>Building end-to-end applications, from interface to backend, databases, and deployment — focusing on how everything works together.</p>
+            </div>
+          </div>
+          <div class="about-pillar" data-reveal data-delay="160">
+            <span class="pillar-num">02</span>
+            <div class="pillar-body">
+              <h3>DSA & Problem Solving</h3>
+              <p>Using data structures and algorithms to write efficient code and think through problems more clearly.</p>
+            </div>
+          </div>
+          <div class="about-pillar" data-reveal data-delay="240">
+            <span class="pillar-num">03</span>
+            <div class="pillar-body">
+              <h3>AI/ML & Security</h3>
+              <p>Exploring machine learning and cybersecurity basics to build systems that are not just functional, but reliable and secure.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION
+  ============================================================ -->
+  <section id="education">
+    <div class="education-container">
+      <div class="section-label" data-reveal>
+        <span class="section-label-num">02</span>
+        <span class="section-label-sep" aria-hidden="true">/</span>
+        <span>Education</span>
+      </div>
+
+      <article class="edu-highlight" data-reveal data-delay="140" aria-label="Education">
+        <div class="edu-highlight-meta">
+          <span class="edu-chip">Undergraduate</span>
+          <span class="edu-year">2024 — 2028</span>
+        </div>
+        <h3 class="edu-degree">B.Tech · Information Technology</h3>
+        <p class="edu-school">Marathwada Mitra Mandal's College of Engineering, Pune, Maharashtra</p>
+        <p class="edu-focus">Focused on building strong fundamentals in full-stack systems, data structures & algorithms, AI/ML, and secure software development.</p>
+        <div class="skill-item skill-item--featured">
+          <span>CGPA</span>
+          <strong>9.53</strong>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE
+  ============================================================ -->
+  <section id="experience">
+
+    <div class="exp-header">
+      <div class="section-label" data-reveal>
+        <span class="section-label-num">03</span>
+        <span class="section-label-sep" aria-hidden="true">/</span>
+        <span>Clubs &amp; Communities</span>
+      </div>
+      <h2 class="exp-h2" data-reveal data-delay="80">
+        Learning by building<br><em>with communities</em>
+      </h2>
+    </div>
+
+    <div class="exp-list">
+
+      <div class="exp-item exp-item--featured" data-reveal data-exp>
+        <button class="exp-head" aria-expanded="false">
+          <span class="exp-year">2025 — Present</span>
+          <span class="exp-title">Member</span>
+          <span class="exp-org">ACM Student Chapter</span>
+          <span class="exp-badge exp-badge--featured">Featured</span>
+          <span class="exp-chevron" aria-hidden="true"></span>
+        </button>
+        <div class="exp-body">
+          <p>Actively involved in organizing and supporting technical initiatives within the ACM chapter.</p>
+          <ul>
+            <li>Contributed to workshops and competitions during Dexterity 2K25 (national-level tech fest)</li>
+            <li>Assisted in coordination and on-ground execution of events</li>
+            <li>Volunteered at Hacksprint v7.0, supporting event operations and participant flow</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item" data-reveal data-delay="60" data-exp>
+        <button class="exp-head" aria-expanded="false">
+          <span class="exp-year">2025 — Present</span>
+          <span class="exp-title">Member</span>
+          <span class="exp-org">IT Tech Club</span>
+          <span class="exp-badge">Club</span>
+          <span class="exp-chevron" aria-hidden="true"></span>
+        </button>
+        <div class="exp-body">
+          <p>Worked collaboratively in organizing technical activities and student-driven events.</p>
+          <ul>
+            <li>Helped organize workshops and competitions during Dexterity 2K25</li>
+            <li>Participated in planning and execution of club-led initiatives</li>
+            <li>Gained hands-on experience in teamwork and coordination</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item" data-reveal data-delay="120" data-exp>
+        <button class="exp-head" aria-expanded="false">
+          <span class="exp-year">2025 — 2026</span>
+          <span class="exp-title">Logistics Coordinator</span>
+          <span class="exp-org">TEDx MMCOE</span>
+          <span class="exp-badge">Club</span>
+          <span class="exp-chevron" aria-hidden="true"></span>
+        </button>
+        <div class="exp-body">
+          <p>Managed logistics and ensured smooth execution of a large-scale TEDx event.</p>
+          <ul>
+            <li>Handled on-ground coordination across multiple teams</li>
+            <li>Supported event setup, scheduling, and execution flow</li>
+            <li>Worked in a fast-paced environment ensuring seamless operations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item" data-reveal data-delay="180" data-exp>
+        <button class="exp-head" aria-expanded="false">
+          <span class="exp-year">Ongoing</span>
+          <span class="exp-title">Cybersecurity Exploration</span>
+          <span class="exp-org">Self-Driven</span>
+          <span class="exp-badge exp-badge--track">Track</span>
+          <span class="exp-chevron" aria-hidden="true"></span>
+        </button>
+        <div class="exp-body">
+          <p>Network security and secure development practices alongside core full-stack and AI/ML projects. Building intentional, defensive coding habits.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section id="skills">
+    <div class="skills-container">
+      <div class="skills-header">
+        <div class="section-label" data-reveal>
+          <span class="section-label-num">04</span>
+          <span class="section-label-sep" aria-hidden="true">/</span>
+          <span>Skills</span>
+        </div>
+      </div>
+      <div class="skills-content">
+        <div class="skills-grid">
+          
+          <!-- Core Programming -->
+          <div class="skill-category" data-reveal data-delay="80">
+            <h3 class="skill-category-title">Languages</h3>
+            <div class="skill-group">
+              <span class="skill-item">Java</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C++</span>
+              <span class="skill-item">C</span>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category" data-reveal data-delay="120">
+            <h3 class="skill-category-title">Frontend</h3>
+            <div class="skill-group">
+              <span class="skill-item skill-item--featured">React</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">HTML/CSS</span>
+              <span class="skill-item">Basic UI/UX principles</span>
+            </div>
+          </div>
+
+          <!-- Backend & Systems -->
+          <div class="skill-category" data-reveal data-delay="160">
+            <h3 class="skill-category-title">Backend & Systems</h3>
+            <div class="skill-group">
+              <span class="skill-item skill-item--featured">Node.js</span>
+              <span class="skill-item skill-item--featured">Express</span>
+              <span class="skill-item">API Design</span>
+              <span class="skill-item">Authentication</span>
+            </div>
+          </div>
+
+          <!-- Database Design -->
+          <div class="skill-category" data-reveal data-delay="200">
+            <h3 class="skill-category-title">Database Design</h3>
+            <div class="skill-group">
+              <span class="skill-item skill-item--featured">MongoDB</span>
+              <span class="skill-item">NoSQL</span>
+              <span class="skill-item">SQL</span>
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="skill-category" data-reveal data-delay="240">
+            <h3 class="skill-category-title">AI/ML</h3>
+            <div class="skill-group">
+              <span class="skill-item skill-item--featured">Python</span>
+              <span class="skill-item">scikit-learn</span>
+              <span class="skill-item">TensorFlow</span>
+              <span class="skill-item">NumPy</span>
+              <span class="skill-item">Pandas</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div class="skill-category" data-reveal data-delay="280">
+            <h3 class="skill-category-title">DevOps & Tools</h3>
+            <div class="skill-group">
+              <span class="skill-item skill-item--featured">Git & GitHub</span>
+              <span class="skill-item">Linux</span>
+              <span class="skill-item">Supabase</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORK / PROJECTS — Gallery, hierarchical
+  ============================================================ -->
+  <section id="work">
+
+    <div class="work-header">
+      <div class="section-label" data-reveal>
+        <span class="section-label-num">05</span>
+        <span class="section-label-sep" aria-hidden="true">/</span>
+        <span>Selected Work</span>
+      </div>
+    </div>
+
+    <!-- FEATURED PROJECT -->
+    <article class="proj-featured" data-reveal data-cursor-label="View →">
+      <div class="proj-featured-visual">
+        <div class="proj-featured-bg">
+          <img src="IMG/krishi_sakhi.jpg" alt="KrishiSakhi project preview" class="proj-featured-img" loading="lazy" />
+        </div>
+        <div class="proj-featured-hover-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="proj-featured-info">
+        <div class="proj-meta">
+          <div class="proj-tags">
+            <span class="proj-tag">Full-Stack System</span>
+            <span class="proj-tag">AI Assistant</span>
+            <span class="proj-tag">Real-time Data</span>
+          </div>
+          <span class="proj-num">01</span>
+        </div>
+        <h2 class="proj-featured-title">KrishiSakhi</h2>
+        <p class="proj-featured-desc">An agricultural assistant platform empowering farmers with crop management tools and real-time market insights. Designed for accessibility in rural communities.</p>
+        <ul class="proj-points">
+          <li>Intuitive UI designed for low-literacy rural users</li>
+          <li>Real-time crop and market data integration</li>
+          <li>Improved accessibility and offline resilience</li>
+        </ul>
+        <div class="proj-stack">
+          <span>React</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="https://github.com/gondalpreeti" class="proj-link" target="_blank" rel="noopener noreferrer">
+          View project
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M1.5 6.5h10M7 2l4.5 4.5L7 11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- SECONDARY PROJECTS -->
+    <div class="projs-secondary">
+
+      <article class="proj-card" data-reveal data-delay="80" data-cursor-label="View →">
+        <div class="proj-card-visual proj-card-visual--algo">
+          <img src="IMG/resume_screening.jpg" alt="AI Resume Screening Assistant project preview" class="proj-card-img" loading="lazy" />
+          <div class="proj-card-hover-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="proj-card-info">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">AI/ML</span>
+              <span class="proj-tag">NLP</span>
+              <span class="proj-tag">Resume Parsing</span>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <h3 class="proj-card-title">AI Resume Screening Assistant</h3>
+          <p class="proj-card-desc">An intelligent system that analyzes resumes, ranks candidates, and matches them to job descriptions using state-of-the-art NLP pipelines.</p>
+          <ul class="proj-points">
+            <li>Custom NLP pipeline for resume parsing & keyword extraction</li>
+            <li>ML-based candidate-to-job matching algorithm</li>
+            <li>Full-stack recruiter dashboard with insights</li>
+          </ul>
+          <div class="proj-stack proj-stack--sm">
+            <span>Python</span><span>NLP</span><span>FastAPI</span><span>React</span>
+          </div>
+          <a href="https://github.com/gondalpreeti" class="proj-inline-link" target="_blank" rel="noopener noreferrer">View project ↗</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-reveal data-delay="160" data-cursor-label="View →">
+        <div class="proj-card-visual proj-card-visual--threat">
+          <img src="IMG/edtech.jpg" alt="Chanakya EdTech Platform project preview" class="proj-card-img" loading="lazy" />
+          <div class="proj-card-hover-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="proj-card-info">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">EdTech</span>
+              <span class="proj-tag">Full-Stack Platform</span>
+              <span class="proj-tag">Performance Optimization</span>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <h3 class="proj-card-title">Chanakya EdTech Platform</h3>
+          <p class="proj-card-desc">A scalable education platform with AI-driven personalized learning recommendations, course management, and performance-optimized architecture.</p>
+          <ul class="proj-points">
+                <li>Full-stack architecture with auth & course management</li>
+                <li>AI-powered personalized learning paths</li>
+                <li>SEO & performance optimized with Next.js</li>
+          </ul>
+          <div class="proj-stack proj-stack--sm">
+            <span>Next.js</span><span>MongoDB</span><span>Node.js</span><span>AI</span>
+          </div>
+          <a href="https://github.com/gondalpreeti" class="proj-inline-link" target="_blank" rel="noopener noreferrer">View project ↗</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-reveal data-delay="200" data-cursor-label="View →">
+        <div class="proj-card-visual proj-card-visual--creative">
+          <img src="IMG/dough-re-mi.png" alt="Dough-Re-Mi AI Cookbook UI/UX project preview" class="proj-card-img" loading="lazy" />
+          <div class="proj-card-hover-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="proj-card-info">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">UI/UX Design</span>
+              <span class="proj-tag">User Flows</span>
+              <span class="proj-tag">AI-Based Concept</span>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <h3 class="proj-card-title">Dough-Re-Mi · AI Cookbook Experience</h3>
+          <p class="proj-card-desc">
+            Designed UI/UX for an AI-powered cookbook platform focused on personalized recipe discovery and intuitive user interaction.
+          </p>
+          <ul class="proj-points">
+            <li>Designed user flows for seamless recipe discovery</li>
+            <li>Created wireframes and interface layouts</li>
+            <li>Focused on usability and clean interaction design</li>
+          </ul>
+
+          <div class="proj-stack proj-stack--sm">
+            <span>Figma</span><span>UI/UX</span><span>Design Systems</span>
+          </div>
+          <a href="https://github.com/gondalpreeti" class="proj-inline-link" target="_blank" rel="noopener noreferrer">
+            View design ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact">
+
+    <div class="contact-grid">
+
+      <div class="contact-left">
+        <div class="section-label" data-reveal>
+          <span class="section-label-num">06</span>
+          <span class="section-label-sep" aria-hidden="true">/</span>
+          <span>Contact</span>
+        </div>
+
+        <h2 class="contact-h2" data-reveal data-delay="80">
+          Open to internships,<br>
+          team projects,<br>
+          <em>and real work.</em>
+        </h2>
+
+        <p class="contact-body" data-reveal data-delay="160">
+          Building meaningful software and want someone strong in full-stack thinking, DSA logic, and practical AI/ML? I'd love to connect.
+        </p>
+
+        <a href="mailto:preetigondal2024.it@mmcoe.edu.in" class="contact-email" data-reveal data-delay="240">
+          preetigondal2024.it@mmcoe.edu.in
+        </a>
+
+        <nav class="contact-socials" aria-label="Social links" data-reveal data-delay="320">
+          <a href="https://www.linkedin.com/in/preeti-gondal-649990310/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/gondalpreeti" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+
+      <div class="contact-right" aria-hidden="true" data-reveal data-delay="200">
+        <div class="contact-monogram">P</div>
+        <div class="contact-ring r1"></div>
+        <div class="contact-ring r2"></div>
+        <div class="contact-ring r3"></div>
+      </div>
+
+    </div>
+
+    <footer class="site-footer">
+      <span>© 2026 Preeti Gondal</span>
+      <a href="#hero" class="footer-top">Back to top ↑</a>
+    </footer>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
