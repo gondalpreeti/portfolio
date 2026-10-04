@@ -83,7 +83,7 @@ ul.b{margin:0 0 .9rem;padding-left:1.1rem;max-width:40rem}ul.b li{margin-bottom:
 .wrap{max-width:72rem}
 .hero{position:relative;overflow:hidden;background:radial-gradient(520px circle at var(--mx,78%) var(--my,25%),rgba(201,167,95,.17),transparent 62%),var(--purple)}
 #work,#community{background:#EFE8D8}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
 .stat{background:var(--card);border:1px solid rgba(32,23,51,.12);border-top:2px solid var(--gold);padding:1.4rem 1.2rem;display:flex;flex-direction:column;gap:.4rem}
 .stat b{font:400 clamp(2.4rem,5vw,3.6rem)/1 var(--display);color:var(--emerald)}
 .stat span{font-size:.95rem;color:var(--muted)}

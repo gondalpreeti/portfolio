@@ -15,12 +15,9 @@ export const NAV = [
 
 export const STATS = [
   { to: 9.53, dec: 2, suf: '', label: 'CGPA out of 10 after the second year of B.Tech' },
-  { to: 40, dec: 0, suf: '', label: 'participants selected nationwide for ACM Summer School 2026' },
   { to: 2, dec: 0, suf: 'nd', label: 'place at Innoverse 2025, with a ₹5,000 cash prize' },
   { to: 5, dec: 0, suf: '', label: 'projects built across AI, web and design' },
 ]
-
-export const TOPICS = ['GPU architecture', 'CUDA programming', 'Distributed ML systems', 'ML compilers', 'Hardware accelerators', 'Edge AI', 'Transformers', 'Explainable AI']
 
 export const FILTERS = [
   { id: 'all', label: 'All' },

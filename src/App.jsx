@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { LINKS, NAV, STATS, TOPICS, FILTERS, PROJECTS, SKILLS, POSITIONS, ACTIVITIES } from './data'
+import { LINKS, NAV, STATS, FILTERS, PROJECTS, SKILLS, POSITIONS, ACTIVITIES } from './data'
 
 const BASE = import.meta.env.BASE_URL
 const reduced = () => matchMedia('(prefers-reduced-motion:reduce)').matches
@@ -273,8 +273,6 @@ export default function App() {
           <div className="wrap">
             <Title>Highlights</Title>
             <div className="stats">{STATS.map(s => <Stat key={s.label} {...s} />)}</div>
-            <p className="topics">ACM Summer School 2026, Systems for Machine Learning at VIT Vellore, covered:</p>
-            <div className="chips lg">{TOPICS.map(t => <span key={t}>{t}</span>)}</div>
           </div>
         </section>
         <Projects />
